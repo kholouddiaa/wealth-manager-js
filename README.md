@@ -1,3 +1,4 @@
+
 # 💰 Wealth Manager App (JavaScript)
 
 A dynamic web application that manages and manipulates users' wealth using modern JavaScript array methods.
@@ -9,6 +10,14 @@ This project demonstrates real-world usage of:
 - reduce()
 - Async/Await
 - DOM Manipulation
+
+---
+
+## 🌐 Live Demo
+
+Check out the live version of the app here:
+
+👉 https://kholouddiaa.github.io/wealth-manager-js/
 
 ---
 
@@ -27,11 +36,11 @@ This project demonstrates real-world usage of:
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Bootstrap 5
-- Fetch API
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Bootstrap 5  
+- Fetch API  
 
 ---
 
@@ -117,27 +126,6 @@ wealth-manager-js/
    * Sort by richest
    * Calculate total wealth
 4. DOM updates dynamically after each action.
-
----
-
-## 📸 UI Overview
-
-Simple dashboard layout:
-
-* Left sidebar → Actions
-* Right section → Dynamic wealth list
-
----
-
-## 📈 Learning Purpose
-
-This project focuses on:
-
-* Data transformation using array methods
-* Functional programming concepts
-* DOM updates after state changes
-* Using APIs with async/await
-* Clean UI structure
 
 ---
 
