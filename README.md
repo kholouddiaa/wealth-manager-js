@@ -19,6 +19,8 @@ This project demonstrates real-world usage of:
 - 🏆 Show Only Millionaires
 - 📊 Sort by Richest
 - 🧮 Calculate Total Wealth
+- 👨 Show Only Males
+- 👩 Show Only Females
 - 🔄 Dynamic UI Update
 
 ---
@@ -37,10 +39,11 @@ This project demonstrates real-world usage of:
 
 ### 📌 Fetch API + Async/Await
 ```javascript
-const response = await fetch("https://jsonplaceholder.typicode.com/users");
-```
+const response = await fetch("https://randomuser.me/api");
+````
 
 ### 📌 map() – Double Money
+
 ```javascript
 persons = persons.map(p => ({
   name: p.name,
@@ -49,19 +52,43 @@ persons = persons.map(p => ({
 ```
 
 ### 📌 filter() – Show Millionaires
+
 ```javascript
 persons = persons.filter(p => p.wealth >= 1_000_000);
 ```
 
+### 📌 filter() – Show Male / Female
+
+```javascript
+persons = persons.filter(p => p.gender === "male");
+```
+
+```javascript
+persons = persons.filter(p => p.gender === "female");
+```
+
 ### 📌 sort() – Sort by Wealth
+
 ```javascript
 persons.sort((a, b) => b.wealth - a.wealth);
 ```
 
-### 📌 reduce() logic (Manual accumulation)
+### 📌 Total Wealth Calculation
+
 ```javascript
 let total = 0;
 persons.forEach(p => total += p.wealth);
+```
+
+### 📌 Formatting Money using Intl.NumberFormat
+
+```javascript
+const formatMoney = (num) => {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(num);
+};
 ```
 
 ---
@@ -83,36 +110,41 @@ wealth-manager-js/
 1. Click **Add User** → Random user is fetched from API.
 2. Wealth is randomly generated.
 3. Use buttons to manipulate data:
-   - Double wealth
-   - Filter millionaires
-   - Sort by richest
-   - Calculate total wealth
-4. DOM updates dynamically.
+
+   * Double wealth
+   * Filter millionaires
+   * Show only males / females
+   * Sort by richest
+   * Calculate total wealth
+4. DOM updates dynamically after each action.
 
 ---
 
 ## 📸 UI Overview
 
 Simple dashboard layout:
-- Left sidebar → Actions
-- Right section → Dynamic wealth list
+
+* Left sidebar → Actions
+* Right section → Dynamic wealth list
 
 ---
 
 ## 📈 Learning Purpose
 
 This project focuses on:
-- Data transformation
-- Functional programming concepts
-- DOM updates after state changes
-- Clean UI structure
+
+* Data transformation using array methods
+* Functional programming concepts
+* DOM updates after state changes
+* Using APIs with async/await
+* Clean UI structure
 
 ---
 
 ## 👩‍💻 Author
 
-Kholoud Diaa  
-GitHub: https://github.com/kholouddiaa  
+**Kholoud Diaa**
+GitHub: [https://github.com/kholouddiaa](https://github.com/kholouddiaa)
 
 ---
 
