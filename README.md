@@ -20,6 +20,14 @@ Check out the live version of the app here:
 👉 https://kholouddiaa.github.io/wealth-manager-js/
 
 ---
+## 📸 Screenshots
+
+<img src="docs/Calculate%20wealth.png" width="600">
+
+<img src="docs/ShowOnly%20male.png" width="600">
+
+<img src="docs/Screenshot%202026-02-16%20220043.png" width="600">
+---
 
 ## 🚀 Features
 
